@@ -20,9 +20,10 @@
     // Override point for customization after application launch.
     
     RootViewController *rootVC = [[RootViewController alloc] init];
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = rootVC;
+    self.window.rootViewController = naVC;
     
     [self.window makeKeyAndVisible];
     

@@ -40,6 +40,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     self.isRecording  = NO;
     self.imageIndex = 0;
     self.combineIndex = 0;
@@ -50,6 +52,15 @@
     [self createDownView];
     
     [self createButton];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.videoCamera stopCameraCapture];
+    [gpumovieWriter cancelRecording];
+    [movieFile cancelProcessing];
     
 }
 

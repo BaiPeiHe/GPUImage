@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "Case01ViewController.h"
+#import "Case02ViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>;
 
@@ -30,17 +31,20 @@
 
 - (void)createData{
     
-    self.titleArr = [NSMutableArray arrayWithObjects:@"边录制,边合成", nil];
+    self.titleArr = [NSMutableArray arrayWithObjects:@"边录制,边合成",@"等待~~", nil];
     
 }
 
 - (void)createView{
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:self.tableView];
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    self.tableView.rowHeight = 60;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
 }
@@ -52,8 +56,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    NSString *title = self.titleArr[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Case%0.2ld  %@",indexPath.row + 1,title];
     
     return cell;
 }
@@ -68,12 +72,17 @@
             vc = [[Case01ViewController alloc] init];
             
             break;
+        case 1:
+            
+            vc = [[Case02ViewController alloc] init];
+            
+            break;
             
         default:
             break;
     }
     
-    [self presentViewController:vc animated:YES completion:^{}];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

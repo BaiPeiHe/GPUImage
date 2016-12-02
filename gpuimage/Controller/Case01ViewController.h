@@ -6,8 +6,8 @@
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface Case01ViewController : UIViewController
+@interface Case01ViewController : BaseViewController
 
 @end

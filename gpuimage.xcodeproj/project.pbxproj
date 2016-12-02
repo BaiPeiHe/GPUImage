@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		98CBDE485777D15CA7536E4D /* libPods-gpuimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC5E558015736E0402C95BA /* libPods-gpuimage.a */; };
 		E26FE2F51DF14B2300D4D044 /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */; };
+		E26FE2F91DF154B600D4D044 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2F81DF154B600D4D044 /* BaseViewController.m */; };
+		E26FE2FC1DF15D3600D4D044 /* Case02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */; };
 		E2D6B6FE1DD9C0A500302915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6B6FD1DD9C0A500302915 /* main.m */; };
 		E2D6B7071DD9C0A500302915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D6B7051DD9C0A500302915 /* Main.storyboard */; };
 		E2D6B7091DD9C0A500302915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D6B7081DD9C0A500302915 /* Assets.xcassets */; };
@@ -48,6 +50,10 @@
 		E26FE2F31DF14B2300D4D044 /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
 		E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E26FE2F61DF14C3200D4D044 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E26FE2F71DF154B600D4D044 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E26FE2F81DF154B600D4D044 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E26FE2FA1DF15D3600D4D044 /* Case02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case02ViewController.h; sourceTree = "<group>"; };
+		E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case02ViewController.m; sourceTree = "<group>"; };
 		E2D6B6F91DD9C0A500302915 /* gpuimage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpuimage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6B6FD1DD9C0A500302915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2D6B7061DD9C0A500302915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,10 +196,14 @@
 		E2DBDBE11DF12BCE007C7DDA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E26FE2F71DF154B600D4D044 /* BaseViewController.h */,
+				E26FE2F81DF154B600D4D044 /* BaseViewController.m */,
 				E2DBDE071DF12C25007C7DDA /* RootViewController.h */,
 				E2DBDE081DF12C25007C7DDA /* RootViewController.m */,
 				E26FE2F31DF14B2300D4D044 /* Case01ViewController.h */,
 				E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */,
+				E26FE2FA1DF15D3600D4D044 /* Case02ViewController.h */,
+				E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,9 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DBDD511DF12BCF007C7DDA /* AppDelegate.m in Sources */,
+				E26FE2F91DF154B600D4D044 /* BaseViewController.m in Sources */,
 				E2DBDE091DF12C25007C7DDA /* RootViewController.m in Sources */,
 				E2DBDE031DF12BD0007C7DDA /* MovieEngine.m in Sources */,
 				E2D6B6FE1DD9C0A500302915 /* main.m in Sources */,
+				E26FE2FC1DF15D3600D4D044 /* Case02ViewController.m in Sources */,
 				E26FE2F51DF14B2300D4D044 /* Case01ViewController.m in Sources */,
 				E2DBDE011DF12BD0007C7DDA /* GPUImageBeautifyFilter.m in Sources */,
 				E2DBDE021DF12BD0007C7DDA /* ImageEngine.m in Sources */,
