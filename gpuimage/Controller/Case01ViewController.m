@@ -1,22 +1,20 @@
 //
-//  ViewController.m
+//  Case01ViewController.m
 //  gpuimage
 //
-//  Created by 白鹤 on 16/11/14.
+//  Created by 白鹤 on 16/12/2.
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
+#import "Case01ViewController.h"
 
-#import "ViewController.h"
 #import "GPUImage.h"
 #import "GPUImageBeautifyFilter.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ImageEngine.h"
 
-#import "ViewController.h"
 
-@interface ViewController ()
-
+@interface Case01ViewController ()
 
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageView *filterView;
@@ -29,9 +27,10 @@
 @property (nonatomic, assign) NSInteger imageIndex;
 @property (nonatomic, assign) NSInteger combineIndex;
 @property (nonatomic, assign) CGFloat rorate;
+
 @end
 
-@implementation ViewController
+@implementation Case01ViewController
 {
     GPUImageMovie *movieFile;
     GPUImageOutput<GPUImageInput> *filter;
@@ -75,8 +74,6 @@
             
             @autoreleasepool {
                 
-//                UIImage *image = [output imageFromCurrentFramebuffer];
-                
                 CGImageRef imageRef = [output newCGImageFromCurrentlyProcessedOutput];
                 
                 UIImage *image = [UIImage imageWithCGImage:imageRef];
@@ -89,9 +86,6 @@
         
         [output useNextFrameForImageCapture];
     }];
-    
-    
-    
     
     [self.videoCamera startCameraCapture];
     
@@ -144,7 +138,7 @@
     // 显示到界面
     [filter addTarget:filterView];
     [filter addTarget:gpumovieWriter];
-
+    
     __weak typeof(self) weakSelf = self;
     
     [progressFilter setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
@@ -152,24 +146,10 @@
         imageView.image = weakSelf.beautieImage;
         
         imageView.layer.anchorPoint = CGPointMake(0.5, 1.0);
-//        imageView.layer.masksToBounds = NO;
         
         imageView.bounds = CGRectMake(0, 0, 144, 192);
         
-//        imageView.center = CGPointMake(self.combineIndex, self.combineIndex);
-        
         [weakSelf drawFaceShapeInLayer:imageView.layer];
-        
-
-        /*
-        if(self.combineIndex % 10 == 0){
-            self.rorate += 45;
-        }
-        CGFloat r = self.rorate / 180.0;
-        [imageView.layer setValue:@( r * M_PI) forKeyPath:@"transform.rotation.z"];
-        */
-        // 暂停
-        
         
         [uielement updateWithTimestamp:time];
         
@@ -359,5 +339,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
