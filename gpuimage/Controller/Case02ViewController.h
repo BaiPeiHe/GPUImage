@@ -1,13 +1,13 @@
 //
-//  Case02ViewController.h
+//  Case01ViewController.h
 //  gpuimage
 //
 //  Created by 白鹤 on 16/12/2.
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface Case02ViewController : UIViewController
+@interface Case02ViewController : BaseViewController
 
 @end

@@ -6,6 +6,8 @@
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
+#define Value 323
+
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 

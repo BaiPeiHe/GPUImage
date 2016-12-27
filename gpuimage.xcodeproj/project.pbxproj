@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		98CBDE485777D15CA7536E4D /* libPods-gpuimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC5E558015736E0402C95BA /* libPods-gpuimage.a */; };
+		E23C8A8E1E126A3200E31CB9 /* Case02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A8D1E126A3200E31CB9 /* Case02ViewController.m */; };
 		E26FE2F51DF14B2300D4D044 /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */; };
 		E26FE2F91DF154B600D4D044 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2F81DF154B600D4D044 /* BaseViewController.m */; };
-		E26FE2FC1DF15D3600D4D044 /* Case02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */; };
 		E2D6B6FE1DD9C0A500302915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6B6FD1DD9C0A500302915 /* main.m */; };
 		E2D6B7071DD9C0A500302915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D6B7051DD9C0A500302915 /* Main.storyboard */; };
 		E2D6B7091DD9C0A500302915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D6B7081DD9C0A500302915 /* Assets.xcassets */; };
@@ -47,13 +47,13 @@
 		51A5A42C7730B303B18E910A /* Pods-gpuimage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpuimage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gpuimage/Pods-gpuimage.debug.xcconfig"; sourceTree = "<group>"; };
 		8BAE9F6ED04F8F241B035BE2 /* Pods-gpuimage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpuimage.release.xcconfig"; path = "Pods/Target Support Files/Pods-gpuimage/Pods-gpuimage.release.xcconfig"; sourceTree = "<group>"; };
 		BAC5E558015736E0402C95BA /* libPods-gpuimage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gpuimage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C8A8C1E126A3200E31CB9 /* Case02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case02ViewController.h; sourceTree = "<group>"; };
+		E23C8A8D1E126A3200E31CB9 /* Case02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case02ViewController.m; sourceTree = "<group>"; };
 		E26FE2F31DF14B2300D4D044 /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
 		E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E26FE2F61DF14C3200D4D044 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E26FE2F71DF154B600D4D044 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E26FE2F81DF154B600D4D044 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		E26FE2FA1DF15D3600D4D044 /* Case02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case02ViewController.h; sourceTree = "<group>"; };
-		E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case02ViewController.m; sourceTree = "<group>"; };
 		E2D6B6F91DD9C0A500302915 /* gpuimage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpuimage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6B6FD1DD9C0A500302915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2D6B7061DD9C0A500302915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,8 +202,8 @@
 				E2DBDE081DF12C25007C7DDA /* RootViewController.m */,
 				E26FE2F31DF14B2300D4D044 /* Case01ViewController.h */,
 				E26FE2F41DF14B2300D4D044 /* Case01ViewController.m */,
-				E26FE2FA1DF15D3600D4D044 /* Case02ViewController.h */,
-				E26FE2FB1DF15D3600D4D044 /* Case02ViewController.m */,
+				E23C8A8C1E126A3200E31CB9 /* Case02ViewController.h */,
+				E23C8A8D1E126A3200E31CB9 /* Case02ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				TargetAttributes = {
 					E2D6B6F81DD9C0A500302915 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = YBK3K2K55H;
+						DevelopmentTeam = U2MU5L2D88;
 						ProvisioningStyle = Automatic;
 					};
 					E2D6B7111DD9C0A500302915 = {
@@ -434,7 +434,7 @@
 				E2DBDE091DF12C25007C7DDA /* RootViewController.m in Sources */,
 				E2DBDE031DF12BD0007C7DDA /* MovieEngine.m in Sources */,
 				E2D6B6FE1DD9C0A500302915 /* main.m in Sources */,
-				E26FE2FC1DF15D3600D4D044 /* Case02ViewController.m in Sources */,
+				E23C8A8E1E126A3200E31CB9 /* Case02ViewController.m in Sources */,
 				E26FE2F51DF14B2300D4D044 /* Case01ViewController.m in Sources */,
 				E2DBDE011DF12BD0007C7DDA /* GPUImageBeautifyFilter.m in Sources */,
 				E2DBDE021DF12BD0007C7DDA /* ImageEngine.m in Sources */,
@@ -587,7 +587,7 @@
 			baseConfigurationReference = 51A5A42C7730B303B18E910A /* Pods-gpuimage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBK3K2K55H;
+				DEVELOPMENT_TEAM = U2MU5L2D88;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gpuimage/Application/PrefixHeader.pch";
 				INFOPLIST_FILE = gpuimage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -602,7 +602,7 @@
 			baseConfigurationReference = 8BAE9F6ED04F8F241B035BE2 /* Pods-gpuimage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YBK3K2K55H;
+				DEVELOPMENT_TEAM = U2MU5L2D88;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gpuimage/Application/PrefixHeader.pch";
 				INFOPLIST_FILE = gpuimage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

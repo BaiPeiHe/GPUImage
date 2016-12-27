@@ -31,7 +31,7 @@
 
 - (void)createData{
     
-    self.titleArr = [NSMutableArray arrayWithObjects:@"边录制,边合成",@"等待~~", nil];
+    self.titleArr = [NSMutableArray arrayWithObjects:@"边录制,边合成",@"录制后,再合成(太耗内存)", nil];
     
 }
 
